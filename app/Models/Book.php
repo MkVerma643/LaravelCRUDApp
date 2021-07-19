@@ -2,8 +2,7 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model as Model;
 
 class Book extends Model
 {
@@ -19,5 +18,4 @@ class Book extends Model
     protected $fillable = [
         'name', 'detail'
     ];
-    use HasFactory;
 }
